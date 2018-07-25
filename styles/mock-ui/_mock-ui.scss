@@ -1,0 +1,14 @@
+.mock-ui-title {
+}
+
+.mock-ui-subtitle {
+}
+
+.mock-ui-section {
+  background-color: white;
+  min-height: 120px;
+  padding: 10px;
+  &:nth-child(odd) {
+    background-color: #333;
+  }
+}

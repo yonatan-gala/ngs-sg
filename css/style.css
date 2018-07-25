@@ -1,3 +1,10 @@
+.mock-ui-section {
+  background-color: white;
+  min-height: 120px;
+  padding: 10px; }
+  .mock-ui-section:nth-child(odd) {
+    background-color: #333; }
+
 body {
   background-color: Red;
   color: white;
