@@ -1,0 +1,79 @@
+$mock-ui-color-thumbs-height: 8rem;
+
+$mock-map-color-thumbs: (
+        primary:(
+                base : sg-color(primary),
+                hue-75: sg-color(primary-hue-75),
+                hue-50: sg-color(primary-hue-50),
+                hue-25: sg-color(primary-hue-25)
+        ),
+        secondary:(
+                base : sg-color(secondary),
+                hue-75: sg-color(secondary-hue-75),
+                hue-50: sg-color(secondary-hue-50),
+                hue-25: sg-color(secondary-hue-25)
+        ),
+        highlight:(
+                base : sg-color(highlight),
+                hue-75: sg-color(highlight-hue-75),
+                hue-50: sg-color(highlight-hue-50),
+                hue-25: sg-color(highlight-hue-25)
+        ),
+        alt:(
+                alt-1: sg-color(alt-1),
+                alt-2: sg-color(alt-2),
+                alt-3: sg-color(alt-3),
+                alt-4: sg-color(alt-4),
+                alt-5: sg-color(alt-5),
+        ),
+        primary-gradients:(
+                gradient-0: sg-color(primary-gradient-0),
+                gradient-180: sg-color(primary-gradient-180),
+                gradient-90: sg-color(primary-gradient-90),
+                gradient-270: sg-color(primary-gradient-270)
+        ),
+        secondary-gradients:(
+                gradient-0: sg-color(secondary-gradient-0),
+                gradient-180: sg-color(secondary-gradient-180),
+                gradient-90: sg-color(secondary-gradient-90),
+                gradient-270: sg-color(secondary-gradient-270)
+        )
+);
+
+.mock-ui-color-thumbs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  // Generating values by loop from maps
+  // - color values by $mock-map-color-thumbs
+  // - content by $mock-map-color-thumbs-content
+  @each $color-type, $color-details in $mock-map-color-thumbs {
+    $keys: map-keys($color-details);
+    @for $i from 1 through length($keys) {
+      $value: map-get($color-details, nth($keys, $i));
+      &--#{$color-type} &__item:nth-child(#{$i}) {
+        background-color: #{$value};
+        &::before {
+          padding: 0 .5rem;
+          background-color: white;
+          content: "#{nth($keys,$i)} #{$value}";
+        }
+      }
+      @if $color-type ==primary-gradients or $color-type==secondary-gradients {
+        &--#{$color-type} &__item:nth-child(#{$i}) {
+          background-image: #{$value};
+          min-width: 100%;
+          flex-basis: 100%;
+          margin-bottom: .5rem;
+        }
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    flex: 1;
+    height: $mock-ui-color-thumbs-height;
+  }
+
+}

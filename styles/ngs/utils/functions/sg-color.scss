@@ -1,0 +1,8 @@
+@function sg-color($key, $color-map: $sg-brand-colors) {
+
+  @if map-has-key($color-map, $key) {
+    @return map-get($color-map, $key);
+  } @else {
+    @error "define color $key from $brand-colors map";
+  }
+}

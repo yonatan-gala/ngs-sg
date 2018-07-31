@@ -1,0 +1,44 @@
+// ### FONTS
+// #### registering font-families
+$base-font-size: 62.5%;
+$sg-font-scale-base: 1.2rem;
+
+$sg-font-scale-xs: ((2/3) * ($sg-font-scale-base));
+$sg-font-scale-sm: 1rem;
+
+$sg-font-scale-md: 1.4rem;
+$sg-font-scale-lg: 1.6rem;
+$sg-font-scale-xlg: 1.8rem;
+$sg-font-scale-title: 2rem;
+$sg-font-scale-title-md: 2.4rem;
+$sg-font-scale-title-lg: 2.8rem;
+$sg-font-scale-title-xlg: 3.2rem;
+
+$sg-type-text: $sg-font-scale-base;
+// todo: not sure below are needed...
+// todo: understand font scale with MANUEL
+$sg-type-subtitle: $sg-font-scale-xlg;
+$sg-type-title: $sg-font-scale-title;
+$sg-type-title-md: $sg-font-scale-title-md;
+$sg-type-title-lg: $sg-font-scale-title-lg;
+$sg-type-title-xlg: $sg-font-scale-title-xlg;
+
+// ### font sizes:
+
+// ### font weights:
+$sg-font-light: 300;
+$sg-font-normal: 400;
+$sg-font-bold-oswald: 600;
+$sg-font-bold-lato: 700;
+
+$sg-spacing-unit: .5rem;
+$sg-spacing-3xs: $sg-spacing-unit;
+$sg-spacing-2xs: 2 * ($sg-spacing-unit);
+$sg-spacing-xs: 3 * ($sg-spacing-unit);
+$sg-spacing-sm: 4 * ($sg-spacing-unit);
+$sg-spacing-md: 5 * ($sg-spacing-unit);
+$sg-spacing-lg: 6 * ($sg-spacing-unit);
+$sg-spacing-xl: 8 * ($sg-spacing-unit);
+$sg-spacing-2xl: 10 * ($sg-spacing-unit);
+$sg-spacing-3xl: 12 * ($sg-spacing-unit);
+$sg-spacing-4xl: 14 * ($sg-spacing-unit);

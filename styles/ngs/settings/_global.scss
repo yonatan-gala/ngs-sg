@@ -1,0 +1,44 @@
+// # SETTINGS: GLOBAL
+// ## This partial defines:
+// -  color variables
+// -  font variables
+// -  spacing variables
+
+//### paths
+$main-asset-path: '/galaspins-theme/';
+$images: '/galaspins-theme/images/';
+
+//### media query sizes
+$media-query-mobile-small: 480;
+$media-query-mobile: 767;
+$media-query-tablet: 1200;
+$media-query-narrow-tablet: 950;
+$media-query-narrow-desktop: 1370;
+$media-query-max-page-desktop: 1680;
+$media-query-desktop-13: 1300;
+$media-query-desktop-14: 1400;
+$media-query-desktop-low: 850;
+$media-query-tablet-mid: 1024;
+// - units per media declarations
+$unit: 1px;
+$mobile: $media-query-mobile * $unit;
+$mobile_plus_1: ($media-query-mobile + 1) * $unit;
+$mobile_small: ($media-query-mobile-small) * $unit;
+$tablet: $media-query-tablet * $unit;
+$tablet_minus_1: ($media-query-tablet - 1) * $unit;
+$tablet_mid: ($media-query-tablet-mid - 1) * $unit;
+$narrow-tablet: $media-query-narrow-tablet * $unit;
+$narrow-desktop: $media-query-narrow-desktop * $unit;
+$desktop-max-page-width: $media-query-max-page-desktop * $unit;
+$desktop-13-width: $media-query-desktop-13 * $unit;
+$desktop-14-width: $media-query-desktop-14 * $unit;
+$desktop-low-height: $media-query-desktop-low * $unit;
+
+$main-font: 'CenturyGothic-Bold', sans-serif;
+$fonts-path: '/galaspins-theme/fonts/';
+$default-font: sans-serif;
+$text-font-family: 'Lato', sans-serif;
+$header-font-family: 'CenturyGothic', sans-serif;
+$header-font-family-bold: 'CenturyGothic-Bold', sans-serif;
+
+// ### Z-INDEX

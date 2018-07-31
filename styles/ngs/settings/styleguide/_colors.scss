@@ -1,0 +1,82 @@
+// ### COLORS
+// #### registering hex colors.
+// - converting color to name via [http://chir.ag/projects/name-that-color]
+$sg-color-stk-martinique: #2b3151;
+$sg-color-stk-golden-tainoi: #ffcc66;
+$sg-color-stk-hibiscus: #ba3167;
+$sg-color-stk-lima: #7ed321;
+$sg-color-stk-mandy: #e65163;
+$sg-color-stk-sandy-brown: #f58a66;
+$sg-color-stk-amethyst: #b041c3;
+$sg-color-stk-wild-watermelon: #fc537f;
+$sg-color-stk-cerulean-blue: #3c48cf;
+$sg-color-stk-aqua: #3bedff;
+$sg-color-stk-white: #ffffff;
+
+// - Brand Semantic
+$sg-color-brand-primary: $sg-color-stk-martinique;
+$sg-color-brand-secondary: $sg-color-stk-golden-tainoi;
+$sg-color-brand-highlight: $sg-color-stk-hibiscus;
+$sg-color-brand-alt-1: $sg-color-stk-sandy-brown;
+$sg-color-brand-alt-2: $sg-color-stk-amethyst;
+$sg-color-brand-alt-3: $sg-color-stk-wild-watermelon;
+$sg-color-brand-alt-4: $sg-color-stk-cerulean-blue;
+$sg-color-brand-alt-5: $sg-color-stk-aqua;
+$sg-color-brand-success: $sg-color-stk-lima;
+$sg-color-brand-danger: $sg-color-stk-mandy;
+$sg-color-light: $sg-color-stk-white;
+$sg-color-text: $sg-color-brand-primary;
+// - Gradients:
+
+// -- primary hues
+$sg-color-brand-primary-hue-75: mix($sg-color-brand-primary, $sg-color-stk-white, 75%);
+$sg-color-brand-primary-hue-50: mix($sg-color-brand-primary, $sg-color-stk-white, 50%);
+$sg-color-brand-primary-hue-25: mix($sg-color-brand-primary, $sg-color-stk-white, 25%);
+// -- secondary hues
+$sg-color-brand-secondary-hue-75: mix($sg-color-brand-secondary, $sg-color-stk-white, 75%);
+$sg-color-brand-secondary-hue-50: mix($sg-color-brand-secondary, $sg-color-stk-white, 50%);
+$sg-color-brand-secondary-hue-25: mix($sg-color-brand-secondary, $sg-color-stk-white, 25%);
+// -- highlight hues
+$sg-color-brand-highlight-hue-75: mix($sg-color-brand-highlight, $sg-color-stk-white, 75%);
+$sg-color-brand-highlight-hue-50: mix($sg-color-brand-highlight, $sg-color-stk-white, 50%);
+$sg-color-brand-highlight-hue-25: mix($sg-color-brand-highlight, $sg-color-stk-white, 25%);
+
+// Gradients:
+$sg-color-brand-primary-gradient-0: linear-gradient(to right, $sg-color-brand-primary 1%, $sg-color-brand-highlight 99%);
+$sg-color-brand-primary-gradient-90: linear-gradient(to bottom, $sg-color-brand-primary 1%, $sg-color-brand-highlight 99%);
+$sg-color-brand-primary-gradient-180: linear-gradient(to left, $sg-color-brand-primary 1%, $sg-color-brand-highlight 99%);
+$sg-color-brand-primary-gradient-270: linear-gradient(to top, $sg-color-brand-primary 1%, $sg-color-brand-highlight 99%);
+$sg-color-brand-secondary-gradient-0: linear-gradient(to right, $sg-color-brand-alt-3 0%, $sg-color-brand-alt-1 51%, $sg-color-brand-secondary 100%);
+$sg-color-brand-secondary-gradient-90: linear-gradient(to bottom, $sg-color-brand-alt-3 0%, $sg-color-brand-alt-1 51%, $sg-color-brand-secondary 100%);
+$sg-color-brand-secondary-gradient-180: linear-gradient(to left, $sg-color-brand-alt-3 0%, $sg-color-brand-alt-1 51%, $sg-color-brand-secondary 100%);
+$sg-color-brand-secondary-gradient-270: linear-gradient(to top, $sg-color-brand-alt-3 0%, $sg-color-brand-alt-1 51%, $sg-color-brand-secondary 100%);
+
+$sg-brand-colors: (
+        primary: $sg-color-brand-primary,
+        primary-hue-75: $sg-color-brand-primary-hue-75,
+        primary-hue-50: $sg-color-brand-primary-hue-50,
+        primary-hue-25: $sg-color-brand-primary-hue-25,
+        secondary: $sg-color-brand-secondary,
+        secondary-hue-75: $sg-color-brand-secondary-hue-75,
+        secondary-hue-50: $sg-color-brand-secondary-hue-50,
+        secondary-hue-25: $sg-color-brand-secondary-hue-25,
+        highlight: $sg-color-brand-highlight,
+        highlight-hue-75: $sg-color-brand-highlight-hue-75,
+        highlight-hue-50: $sg-color-brand-highlight-hue-50,
+        highlight-hue-25: $sg-color-brand-highlight-hue-25,
+        alt-1: $sg-color-brand-alt-1,
+        alt-2: $sg-color-brand-alt-2,
+        alt-3: $sg-color-brand-alt-3,
+        alt-4: $sg-color-brand-alt-4,
+        alt-5: $sg-color-brand-alt-5,
+        primary-gradient-0: $sg-color-brand-primary-gradient-0,
+        primary-gradient-180: $sg-color-brand-primary-gradient-180,
+        primary-gradient-90: $sg-color-brand-primary-gradient-90,
+        primary-gradient-270: $sg-color-brand-primary-gradient-270,
+        secondary-gradient-0: $sg-color-brand-secondary-gradient-0,
+        secondary-gradient-90: $sg-color-brand-secondary-gradient-90,
+        secondary-gradient-180: $sg-color-brand-secondary-gradient-180,
+        secondary-gradient-270: $sg-color-brand-secondary-gradient-270,
+);
+
+

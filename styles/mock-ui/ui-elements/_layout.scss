@@ -1,0 +1,25 @@
+.mock-ui-title {
+
+}
+
+.mock-ui-subtitle {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+.mock-ui-section {
+  padding: 10px;
+}
+
+.mock-ui-pagination {
+  border: 1px solid #e2e2e2;
+  display: inline-flex;
+  align-items: center;
+  height: 3rem;
+  &__link {
+    color: #333;
+    padding: 1rem;
+    display: inline-block;
+  }
+}

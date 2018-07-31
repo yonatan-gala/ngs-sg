@@ -1,0 +1,33 @@
+$type: (
+        1: (8px, 12px),
+        2: (10px, 14px),
+        3:(12px, 16px),
+        4:(14px, 18px),
+        5:(16px, 20px),
+        6:(18px, 22px),
+        7:(20px, 24px),
+        8:(24px, 28px),
+        9:(28px, 32px),
+        10:(32px, 36px),
+        11:(36px, 40px),
+);
+
+.type {
+  font-family: 'Lato', sans-serif;
+  &-alt {
+    font-family: 'Oswald', sans-serif;
+  }
+  @each $type-selector, $type-settings in $type {
+    @for $i from 1 through length($type-selector) {
+      &-#{$type-selector} {
+        font-size: nth($type-settings, 1);
+        line-height: nth($type-settings, 2);
+      }
+    }
+  }
+}
+
+@mixin type($selector) {
+  font-size: nth(map-get($type, $selector), 1);
+  line-height: nth(map-get($type, $selector), 2);
+}

@@ -1,0 +1,15 @@
+// # BASE: This partial defines:
+// -  global reset
+// -  global scaffold
+// -  global building blocks.
+
+// reset and scaffold are ordered first.
+@import 'base/reset';
+@import 'base/scaffold';
+@import 'base/font-face';
+// A - Z order
+// all objects below have no order dependencies
+@import 'base/button';
+@import 'base/icon';
+@import "base/table";
+@import "base/type";
